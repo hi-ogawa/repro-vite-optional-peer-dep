@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build-vite": "vite build",
+    "build": "vite build",
     "build-rollup": "rollup -c",
     "preview": "vite preview"
   },
