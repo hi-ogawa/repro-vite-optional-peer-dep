@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  preact:
-    specifier: ^10.19.3
-    version: 10.19.3
-  preact-iso:
-    specifier: ^2.3.2
-    version: 2.3.2(preact@10.19.3)
+  some-dep:
+    specifier: file:./some-dep
+    version: file:some-dep
 
 devDependencies:
   '@rollup/plugin-node-resolve':
@@ -486,22 +483,6 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /preact-iso@2.3.2(preact@10.19.3):
-    resolution: {integrity: sha512-OU+6dzX1/qAyWfH4zKVqp/apNLfAr8yx4aBUVKyBWoOyPT08bNJk4o08KWIwyQyEkpayW5q+5+GAkYBSky8ndw==}
-    peerDependencies:
-      preact: '>=10'
-      preact-render-to-string: '>=5'
-    peerDependenciesMeta:
-      preact-render-to-string:
-        optional: true
-    dependencies:
-      preact: 10.19.3
-    dev: false
-
-  /preact@10.19.3:
-    resolution: {integrity: sha512-nHHTeFVBTHRGxJXKkKu5hT8C/YWBkPso4/Gad6xuj5dbptt9iF9NZr9pHbPhBrnT2klheu7mHTxTZ/LjwJiEiQ==}
-    dev: false
-
   /resolve@1.22.8:
     resolution: {integrity: sha512-oKWePCxqpd6FlLvGV1VU0x7bkPmmCNolxzjMf4NczoDnQcIWrAF+cPtZn5i6n+RfD2d9i0tzpKnG6Yk168yIyw==}
     hasBin: true
@@ -578,3 +559,13 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  file:some-dep:
+    resolution: {directory: some-dep, type: directory}
+    name: some-dep
+    peerDependencies:
+      no-such-lib: '*'
+    peerDependenciesMeta:
+      no-such-lib:
+        optional: true
+    dev: false

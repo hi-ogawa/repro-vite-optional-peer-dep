@@ -1,2 +1,7 @@
-import { prerender } from 'preact-iso';
-console.log(prerender);
+import { someDep } from "some-dep";
+
+export async function main() {
+  someDep()
+}
+
+main();

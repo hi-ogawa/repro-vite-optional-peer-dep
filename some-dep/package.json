@@ -1,0 +1,14 @@
+{
+  "name": "some-dep",
+  "private": true,
+  "type": "module",
+  "exports": "./index.js",
+  "peerDependencies": {
+		"no-such-lib": "*"
+	},
+	"peerDependenciesMeta": {
+		"no-such-lib": {
+			"optional": true
+		}
+	}
+}

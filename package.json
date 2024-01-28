@@ -8,8 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.3",
-    "preact-iso": "^2.3.2"
+    "some-dep": "file:./some-dep"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
