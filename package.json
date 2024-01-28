@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build-vite": "vite build",
+    "build-rollup": "rollup -c",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.19.3",
+    "preact-iso": "^2.3.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.9.6",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  },
+  "stackblitz": {
+    "startCommand": "vite build"
+  }
+}
