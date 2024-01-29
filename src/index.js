@@ -1,7 +1,8 @@
-import { someDep } from "some-dep";
+import * as someDep from "some-dep";
 
 export async function main() {
-  someDep()
+  // someDep.useNone();
+  someDep.useOptionalPeer();
 }
 
 main();
